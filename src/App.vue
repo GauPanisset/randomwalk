@@ -22,6 +22,7 @@
     <v-toolbar
       app
       :clipped-left="clipped"
+      style="z-index: 10000;"
     >
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title v-text="title"></v-toolbar-title>

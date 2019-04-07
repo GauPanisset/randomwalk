@@ -72,7 +72,7 @@
             .then(response => {
               const point = response.data.center;
               L.circle(this.map.unproject(L.point(point[0] * Math.pow(2, this.map.getZoom() - 2), point[1] * Math.pow(2, this.map.getZoom() - 2))),
-                {radius: 100, fill: false, opacity: 1, color: 'red'})
+                {radius: 100 * response.data.radius/response.data.first, fill: false, opacity: 1, color: 'red'})
                 .addTo(this.zoneLayer);
             })
             .catch(err => {
