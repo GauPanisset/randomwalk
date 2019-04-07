@@ -35,8 +35,8 @@
       <Map ref="mapComponent" :nb-frames="nbFrames" :persistence="persistence"></Map>
     </v-content>
 
-    <v-footer :fixed="fixed" app>
-    </v-footer>
+    <!--v-footer :fixed="fixed" app>
+    </v-footer-->
   </v-app>
 </template>
 
